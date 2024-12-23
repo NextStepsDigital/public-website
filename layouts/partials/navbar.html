@@ -37,7 +37,12 @@
       <div class="flex items-center justify-between">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">{{.Site.Params.title}}</span>
-          <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="">
+          {{ with .Site.Params.logo }}
+          {{ with resources.Get . }}
+          {{ $logoimage := (.Resize "80x80 webp").RelPermalink }}
+          <img class="h-12 w-auto object-contain" src="{{ $logoimage }}" alt="NextSteps Logo">
+          {{ end }}
+          {{ end }}
         </a>
         <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-400" id="mobile-navbar-close-btn">
           <span class="sr-only">Close menu</span>
@@ -51,7 +56,7 @@
           <div class="space-y-2 py-6">
             <a href="/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Home</a>
             <a href="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">About us</a>
-            <a href="/services" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Our Services</a>
+            <a href="/services" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Services</a>
             <a href="/posts" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Blog</a>
           </div>
           <div class="py-6">
