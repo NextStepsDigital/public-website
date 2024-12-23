@@ -3,7 +3,7 @@ title: "Our Services"
 date: 2024-12-22T18:13:00+00:00
 draft: false
 description: This my next awesome post about stuff that my audience love to read.
-featured_image: ../assets/images/defaults/featured_image.jpg
+featured_image: ../assets/images/our-services.jpg
 summary: This is a summary.
 ---
 

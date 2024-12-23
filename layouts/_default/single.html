@@ -18,7 +18,13 @@
           {{ end }}
         {{ end }}
         <div class="px-6 absolute inset-0 flex justify-center items-center">
-          <div class="px-3 sm:text-5xl text-3xl font-black text-center text-white capitalize">{{ .Title }}</div>
+          <div class="px-3 sm:text-5xl text-3xl font-black text-center text-white capitalize" 
+          style="
+          text-shadow: 
+          -1px -1px 0 black,
+           1px -1px 0 black,
+          -1px  1px 0 black,
+           1px  1px 0 black;">{{ .Title }}</div>
         </div>
       </div>
     </div>
