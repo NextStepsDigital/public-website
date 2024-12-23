@@ -13,6 +13,7 @@ params:
   author:
   author_image: /images/defaults/author.jpg
   og_image: /images/defaults/featured_image.jpg
+  logo: /images/NextSteps_logo.png
   moto: "Take your NextSteps online."
   description: "At NextSteps Digital & Web, we specialise in empowering small businesses to confidently take their next steps online by providing tailored digital solutions, including domain registration, custom websites, and professional email services, helping you connect with a new online customer base and grow your business."
   google_analytics_id: '' # @NOTE: To remove the G2A tag, juste leave this key to an empty string.

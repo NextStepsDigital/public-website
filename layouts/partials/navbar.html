@@ -3,7 +3,12 @@
     <div class="flex lg:flex-1">
       <a href="/" class="-m-1.5 p-1.5">
         <span class="sr-only">{{.Site.Params.title}}</span>
-        <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="">
+        {{ with .Site.Params.logo }}
+        {{ with resources.Get . }}
+        {{ $logoimage := (.Resize "80x webp").RelPermalink }}
+        <img src={{ $logoimage }} alt="">
+        {{ end }}
+        {{ end }}
       </a>
     </div>
     <div class="flex lg:hidden">
