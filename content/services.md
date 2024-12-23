@@ -1,5 +1,5 @@
 ---
-title: "Our Services"
+title: "Services"
 date: 2024-12-22T18:13:00+00:00
 draft: false
 description: Discover the digital solutions that empower small businesses.
