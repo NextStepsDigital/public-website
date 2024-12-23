@@ -1,23 +1,23 @@
 {{ if .Site.Params.google_analytics_id }}
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{.Site.Params.google_analytics_id}}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{.Site.Params.google_analytics_id}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
 
-    gtag('config', '{{.Site.Params.google_analytics_id}}');
-  </script>
+  gtag('config', '{{.Site.Params.google_analytics_id}}');
+</script>
 
-  <title itemprop="name">
-    {{if .IsHome}}
-        {{ .Title }}
-    {{else}}
-        {{ .Title }} | {{ .Site.Title }}
-    {{end}}
-  </title>
 {{ end }}
 
+<title itemprop="name">
+  {{if .IsHome}}
+  {{ .Title }}
+  {{else}}
+  {{ .Title }} | {{ .Site.Title }}
+  {{end}}
+</title>
 
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -25,7 +25,8 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta name="description"
+  content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
 
 <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta name="twitter:image" content="{{ .Site.Params.og_image | absURL }}" />
@@ -36,7 +37,8 @@
 <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{{ .Site.Title }}" />
-<meta property="og:description"content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta property="og:description"
+  content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:locale" content="en">
