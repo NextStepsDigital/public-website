@@ -15,8 +15,8 @@ summary: Learn about our services designed to help businesses thrive online.
 </div>
 
 <div class="rounded-2xl py-10 text-center ring-1 ring-inset ring-gray-400 lg:flex lg:flex-col lg:justify-center lg:py-16">
+  <h3 class="text-2xl font-bold text-white">🌟 Starter Package: Simple Website 🌟</h3>
   <div class="mx-auto px-8">
-    <h3 class="text-2xl font-bold text-white">🌟 Starter Package: Simple Website 🌟</h3>
     <p class="mt-4 text-base font-semibold text-gray-300">Initial Setup: £250 | Monthly: £50 (12-month term)</p>
     <ul class="mt-6 text-gray-300 text-left">
       <li>Simple website with up to 5 pages (Home, About, Services, Contact, Blog).</li>
@@ -25,14 +25,14 @@ summary: Learn about our services designed to help businesses thrive online.
       <li>SSL and hosting setup via trusted providers (e.g., IONOS).</li>
       <li>Monthly maintenance (minor updates, security checks).</li>
     </ul>
-    <a href="/contact" class="mt-6 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Contact us to Get Started</a>
+    <a href="#" class="mt-6 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Contact us to Get Started</a>
   </div>
 </div>
 <br />
 
 <div class="rounded-2xl py-10 text-center ring-1 ring-inset ring-gray-400 lg:flex lg:flex-col lg:justify-center lg:py-16">
+  <h3 class="text-2xl font-bold text-white">🚀 Growth Package: Professional Website 🚀</h3>
   <div class="mx-auto px-8">
-    <h3 class="text-2xl font-bold text-white">🚀 Growth Package: Professional Website 🚀</h3>
     <p class="mt-4 text-base font-semibold text-gray-300">Initial Setup: £500 | Monthly: £100 (12-month term)</p>
     <ul class="mt-6 text-gray-300 text-left">
       <li>Professional website with up to 10 pages.</li>
@@ -41,14 +41,14 @@ summary: Learn about our services designed to help businesses thrive online.
       <li>Contact form integration (e.g., Mailchimp).</li>
       <li>Monthly backups, performance checks, and analytics reports.</li>
     </ul>
-    <a href="/contact" class="mt-6 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Contact us to Get Started</a>
+    <a href="#" class="mt-6 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Contact us to Get Started</a>
   </div>
 </div>
 <br />
 
 <div class="rounded-2xl py-10 text-center ring-1 ring-inset ring-gray-400 lg:flex lg:flex-col lg:justify-center lg:py-16">
+  <h3 class="text-2xl font-bold text-white">🛠️ Optional Add-On Services 🛠️</h3>
   <div class="mx-auto px-8">
-    <h3 class="text-2xl font-bold text-white">🛠️ Optional Add-On Services 🛠️</h3>
     <ul class="mt-6 text-gray-300 text-left">
       <li>E-Commerce Setup (e.g., WooCommerce, Shopify): £300</li>
       <li>Advanced SEO Optimisation (keyword research, competitor analysis): £250</li>
@@ -56,7 +56,7 @@ summary: Learn about our services designed to help businesses thrive online.
       <li>Social Media Integration: £100</li>
     </ul>
     <p class="mt-6 text-gray-300">Enhance your package with these customisable options to fit your unique business needs.</p>
-    <a href="/contact" class="mt-6 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Contact us to Get Started</a>
+    <a href="#" class="mt-6 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Contact us to Get Started</a>
   </div>
 </div>
 <br />
