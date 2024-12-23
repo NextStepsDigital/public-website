@@ -1,70 +1,46 @@
-<p align="center" style="padding-top:20px">
- <h1 align="center">Minimal Marketing</h1>
- <p align="center">This is a simple website that is optimized for converting traffic to a marketing goal. It costs only $10/year to host, hence minimal marketing.</p>
-</p>
-  <p align="center">
-    <a href="https://gohugo.io/">
-      <img src="https://img.shields.io/badge/Hugo%20-0.110.0%20-gray.svg?colorA=c9177e&colorB=FF4088&style=for-the-badge"/>
-    </a>
-    <a href="https://tailwindcss.com/">
-      <img src="https://img.shields.io/badge/TailwindCSS%20-V3-gray.svg?colorA=0284c7&colorB=38bdf8&style=for-the-badge"/>
-    </a>
-  </p>
+# NextSteps Digital Website
 
-  <p align="center">
-    <a href="https://minimal-marketing.pages.dev/">View Demo</a>
-    ·
-    <a href="https://github.com/letItCurl/minimal_marketing/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/letItCurl/minimal_marketing/discussions/categories/ideas">Request Feature</a>
-    ·
-    <a href="https://github.com/letItCurl/minimal_marketing/discussions/categories/q-a">Q&A</a>
-  </p>
-</p>
+## Overview
+The website is hosted at [https://testing.nextstepsdigital.online](https://testing.nextstepsdigital.online). It serves as a platform to showcase the services offered by NextSteps Digital and is optimised for small businesses looking to establish their online presence.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/letItCurl/minimal_marketing/main/images/tn.png" alt="Minimal Marketing" style="margin: 25px auto; max-width: 830px" width="100%" height="" />
-</p>
+## Development Environment
 
-# Getting started
+This repository includes a `devcontainer.json` file, which allows developers to set up a development container with the correct versions of:
+- Hugo
+- NPM
+- Yarn
 
-## Clone repo
-`git clone git@github.com:letItCurl/minimal_marketing your-new-marketing-website-name`
+Using the development container ensures consistency across environments and simplifies the development process.
 
-## Install dependencies
-#### Install with NPM
-`npm install`
-#### Install with Yarn
-`yarn`
+## Useful Commands
 
+- **Install dependencies**:
+  ```bash
+  yarn
+  ```
 
-## Start local server
-##### Develop with NPM
-`npm run start`
-##### Develop with Yarn
-`yarn start`
+- **Start the development server**:
+  ```bash
+  yarn start
+  ```
+  Runs the development server on [localhost:1313](http://localhost:1313).
 
-## Build static website for production
-##### Build with NPM
-`npm run build`
-##### Build with Yarn
-`yarn build`
-
-## Form
-To use the form, you could use those services:
-- [https://zapier.com/](https://zapier.com/)
-- [https://formsubmit.Co](https://formsubmit.co/)
-- [https://developers.cloudflare.com/workers/](https://developers.cloudflare.com/workers/)
-
+- **Build the static website**:
+  ```bash
+  yarn build
+  ```
+  Compiles the website into static files in the `/public` directory.
 
 ## Credits
-4044ever - Original Theme
-https://github.com/4044ever/Hugo-Tailwind-3.0.git
+This project is built using:
 
-Jan Heise - Alpine.js Navbar
-https://github.com/jan-heise/responsive-navbar-with-dropdown
+- [Hugo](https://gohugo.io/) for static site generation.
+- [TailwindCSS](https://tailwindcss.com/) for styling.
 
-Nusser Studio - Blog structure
-https://github.com/nusserstudios/tailbliss
+### Additional Contributors
+- 4044ever - Original Theme ([GitHub Repository](https://github.com/4044ever/Hugo-Tailwind-3.0.git))
+- Jan Heise - Alpine.js Navbar ([GitHub Repository](https://github.com/jan-heise/responsive-navbar-with-dropdown))
+- Nusser Studio - Blog Structure ([GitHub Repository](https://github.com/nusserstudios/tailbliss))
 
-Made with ❤️ by [this guy](https://twitter.com/afrodudeonabike)
+---
+Made with ❤️ by the NextSteps Digital team.
