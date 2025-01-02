@@ -9,7 +9,9 @@
 			"extended": true,
 			"version": "0.128.2"
 		},
-		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "18"
+		},
 		"ghcr.io/devcontainers-extra/features/firebase-cli:2": {}
 	},
 	// Features to add to the dev container. More info: https://containers.dev/features.
