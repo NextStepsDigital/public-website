@@ -35,6 +35,8 @@ jobs:
       working-directory: ./backend
       env:
         FIREBASE_PROJECT: ${{ secrets.FIREBASE_PROJECT }}
+        FIREBASE_EMAIL_USER: ${{ secrets.FIREBASE_EMAIL_USER }}
+        FIREBASE_EMAIL_PASS: ${{ secrets.FIREBASE_EMAIL_PASS }}
       run: |
         export GOOGLE_APPLICATION_CREDENTIALS=$GITHUB_WORKSPACE/firebase-key.json
         echo -n $FIREBASE_EMAIL_USER | firebase functions:secrets:set EMAIL_USER
