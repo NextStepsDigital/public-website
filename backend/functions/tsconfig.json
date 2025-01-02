@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
-    "esModuleInterop": true,
-    "moduleResolution": "nodenext",
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "outDir": "lib",
-    "sourceMap": true,
-    "strict": true,
-    "target": "es2017"
+    "module": "NodeNext", // Supports ES Modules and CommonJS
+    "esModuleInterop": true, // Allows default imports from CommonJS
+    "allowSyntheticDefaultImports": true, // Treats CommonJS imports as default imports
+    "moduleResolution": "nodenext", // Resolves modules in NodeNext mode
+    "noImplicitReturns": true, // Ensures all functions return explicitly
+    "noUnusedLocals": true, // Flags unused local variables
+    "outDir": "lib", // Compiled files output directory
+    "sourceMap": true, // Enables source maps
+    "strict": true, // Enables strict type-checking
+    "target": "es2017", // Compiles to ES2017
+    "skipLibCheck": true // Skips type checks on declaration files
   },
   "compileOnSave": true,
   "include": [
