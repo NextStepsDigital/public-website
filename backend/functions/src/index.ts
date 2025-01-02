@@ -26,13 +26,16 @@ export const sendContactEmail = onRequest(
         return;
       }
 
-      logger.info("Email: " + emailUser);
+      // Safely log metadata about the secrets
+      logger.info("Secrets retrieved successfully");
+      logger.info(`EMAIL_USER: ${emailUser.value()?.slice(0, 3)}***`); // Partially obfuscate
+      logger.info(`EMAIL_PASS is set: ${!!emailPass.value()}`); // Check if it's present
 
       // Configure Nodemailer for IONOS SMTP
       const transporter = nodemailer.createTransport({
         host: "smtp.ionos.co.uk",
         port: 587,
-        secure: false, // Upgrade later with STARTTLS
+        secure: true, // Upgrade later with STARTTLS
         auth: {
           user: emailUser.value(),
           pass: emailPass.value(),
