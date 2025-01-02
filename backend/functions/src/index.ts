@@ -9,7 +9,7 @@
 import {onRequest} from "firebase-functions/v2/https";
 import * as nodemailer from "nodemailer";
 import {defineSecret} from "firebase-functions/params";
-import { logger } from "firebase-functions";
+import {logger} from "firebase-functions";
 
 // Define secrets
 const emailUser = defineSecret("EMAIL_USER");
