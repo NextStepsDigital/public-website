@@ -37,4 +37,6 @@ jobs:
       env:
         FIREBASE_PROJECT: ${{ secrets.FIREBASE_PROJECT }}
       run: |
+        echo $GOOGLE_APPLICATION_CREDENTIALS
+        ls -l $GITHUB_WORKSPACE
         firebase deploy --only functions --project $FIREBASE_PROJECT
