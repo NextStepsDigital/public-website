@@ -25,8 +25,8 @@ jobs:
       env:
         FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
       run: |
-        echo $FIREBASE_SERVICE_ACCOUNT_KEY > firebase-key.json
-        export GOOGLE_APPLICATION_CREDENTIALS=firebase-key.json
+        echo $FIREBASE_SERVICE_ACCOUNT_KEY > $GITHUB_WORKSPACE/firebase-key.json
+        export GOOGLE_APPLICATION_CREDENTIALS=$GITHUB_WORKSPACE/firebase-key.json
 
     - name: Navigate to Backend Directory
       working-directory: ./backend/functions
