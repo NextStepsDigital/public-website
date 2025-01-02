@@ -37,6 +37,4 @@ jobs:
         FIREBASE_PROJECT: ${{ secrets.FIREBASE_PROJECT }}
       run: |
         export GOOGLE_APPLICATION_CREDENTIALS=$GITHUB_WORKSPACE/firebase-key.json
-        echo $GOOGLE_APPLICATION_CREDENTIALS
-        ls -l $GITHUB_WORKSPACE
         firebase deploy --only functions --project $FIREBASE_PROJECT
