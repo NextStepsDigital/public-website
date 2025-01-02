@@ -31,10 +31,12 @@ jobs:
       working-directory: ./backend/functions
       run: "[[ -f yarn.lock ]] && yarn || true"
 
-    - name: Deploy Firebase Functions
+    - name: Deploy Firebase Functions & Secrets
       working-directory: ./backend
       env:
         FIREBASE_PROJECT: ${{ secrets.FIREBASE_PROJECT }}
       run: |
         export GOOGLE_APPLICATION_CREDENTIALS=$GITHUB_WORKSPACE/firebase-key.json
+        echo $FIREBASE_EMAIL_USER | firebase --debug functions:secrets:set EMAIL_USER
+        echo $FIREBASE_EMAIL_PASS | firebase --debug functions:secrets:set EMAIL_PASS
         firebase deploy --only functions --project $FIREBASE_PROJECT
