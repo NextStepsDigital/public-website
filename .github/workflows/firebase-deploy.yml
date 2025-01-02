@@ -29,9 +29,8 @@ jobs:
         export GOOGLE_APPLICATION_CREDENTIALS=firebase-key.json
 
     - name: Navigate to Backend Directory
-      working-directory: ./backend
-      run: |
-        npm install  # Install dependencies for the functions
+      working-directory: ./backend/functions
+      run: "[[ -f yarn.lock ]] && yarn || true"
 
     - name: Deploy Firebase Functions
       working-directory: ./backend
