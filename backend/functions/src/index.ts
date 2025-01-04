@@ -11,6 +11,9 @@ import * as nodemailer from "nodemailer";
 import {defineSecret} from "firebase-functions/params";
 import {logger} from "firebase-functions";
 import cors from "cors";
+import * as handlebars from "handlebars";
+import * as fs from "fs-extra";
+import * as path from "path";
 
 // Initialize CORS middleware
 const corsMiddleware = cors({origin: true});
@@ -53,20 +56,27 @@ export const sendContactEmail = onRequest(
           },
         });
 
+        // Load and compile the HTML template
+        const templatePath = path.join(__dirname, "assets", "emailTemplate.html");
+        const source = await fs.readFile(templatePath, "utf-8");
+        const template = handlebars.compile(source);
+
+        // Replace placeholders with actual data
+        const htmlToSend = template({name, businessName, email, phoneNumber, message});
+
         // Compose the email
         const mailOptions = {
           from: emailUser.value(), // Sender address
           to: emailUser.value(), // Recipient address
           subject: "New Contact Form Submission",
-          text: `
-            You have a new contact form submission:
-
-            Clients Name: ${name}
-            Company / Charity Name: ${businessName}
-            Email: ${email}
-            Phone: ${phoneNumber}
-            Message: ${message}
-          `,
+          html: htmlToSend,
+          attachments: [
+            {
+              filename: "logo.png",
+              path: path.join(__dirname, "assets", "logo.png"),
+              cid: "logo", // Same as in the template img src
+            },
+          ],
         };
 
         // Send the email
