@@ -68,7 +68,7 @@ export const sendContactEmail = onRequest(
         const mailOptions = {
           from: emailUser.value(), // Sender address
           to: emailUser.value(), // Recipient address
-          subject: "New Contact Form Submission",
+          subject: `New Contact Form Submission from ${name}`,
           html: htmlToSend,
           attachments: [
             {
