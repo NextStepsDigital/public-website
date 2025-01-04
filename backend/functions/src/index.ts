@@ -24,9 +24,15 @@ export const sendContactEmail = onRequest(
   async (request, response) => {
     corsMiddleware(request, response, async () => {
       try {
-        const {firstName, lastName, email, message} = request.body;
+        const {name, businessName, email, phoneNumber, message} = request.body;
 
-        if (!firstName || !lastName || !email || !message) {
+        // Check CAPTCHA hasn't been set by robot
+        if (request.body.honeypot) {
+          response.status(400).send("CAPTCHA failed.");
+          return;
+        }
+
+        if (!name || !businessName || !email || !phoneNumber || !message) {
           response.status(400).send("Missing form details.");
           return;
         }
@@ -55,9 +61,10 @@ export const sendContactEmail = onRequest(
           text: `
             You have a new contact form submission:
 
-            First Name: ${firstName}
-            Last Name: ${lastName}
+            Clients Name: ${name}
+            Company / Charity Name: ${businessName}
             Email: ${email}
+            Phone: ${phoneNumber}
             Message: ${message}
           `,
         };
